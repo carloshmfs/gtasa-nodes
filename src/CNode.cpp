@@ -5,7 +5,7 @@
 CNode::CNode(std::string &nodeFile)
 {
     CNode::mFilePath = nodeFile;
-    CNode::mNodeFile = std::ifstream(nodeFile);
+    CNode::mNodeFile = std::ifstream(nodeFile, std::ios::binary);
 
     if (!CNode::mNodeFile.is_open()) {
         throw FileNotFoundException(nodeFile.c_str());
