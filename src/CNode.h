@@ -38,7 +38,8 @@ private:
     std::string mFilePath;
     std::ifstream mNodeFile;
     sNodeHeader mHeader;
-    std::vector<sPathNodeEntry> pathNodes;
+    std::vector<sPathNodeEntry> mPedNodes;
+    std::vector<sPathNodeEntry> mVehicleNodes;
 };
 
 
